@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>
+            Contact us
+        </legend>
+        <form action="#">
+            <fieldset>
+                <legend>Contact details</legend>
+                <div>
+                    <input type="text" name="firstname" id="firstname" maxlength="50" placeholder="First name" required>
+                </div>
+                <div>
+                    <input type="text" name="lastname" id="lastname" maxlength="50" placeholder="Last name" required>
+                </div>
+                <div>
+                    <input type="email" name="email" id="email" maxlength="100" placeholder="Contact email" required>
+                </div>
+                <div>
+                    <input type="tel" name="phone" id="phone" maxlength="15" placeholder="Contact phone number" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Property description</legend>
+                <div>
+                    <select name="property-type" id="property-type" required>
+                        <option value="" selected disabled>Property type</option>
+                        <option value="com">Commercial</option>
+                        <option value="res">Residential</option>
+                        <option value="ind">Industrial</option>
+                        <option value="agr">Agricultural</option>
+                        <option value="spec">Special purpose</option>
+                        <option value="mix">Mixed use</option>
+                        <option value="oth">Other</option>
+                    </select>
+                </div>
+                <div>
+                    <textarea name="description" id="description" cols="30" rows="10" placeholder="Please provide a brief description" maxlength="120" required></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" name="amowner" id="amowner" checked>
+                    <label for="amowner">I own the property</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Preferred contact method</legend>
+                <div>
+                    <input type="radio" name="contact-method" id="use-whatever" value="dontmind" checked>
+                    <label for="use-whatever">I don't mind</label>
+                </div>
+                <div>
+                    <input type="radio" name="contact-method" id="use-email" value="email">
+                    <label for="use-email">Contact me via Email</label>
+                </div>
+                <div>
+                    <input type="radio" name="contact-method" id="use-phone" value="phone">
+                    <label for="use-phone">Contact me via phone</label>
+                </div>
+            </fieldset>
+            <div>
+                <input type="checkbox" name="agree" id="agree" required>
+                <label for="agree">
+                    I agree to <a href="#">terms and conditions.</a>
+                </label>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>    
+        </form>
+    </fieldset>
+    <footer>
+        Copyright (c) 2022 Lemonpill
+    </footer>
+</body>
+</html>
