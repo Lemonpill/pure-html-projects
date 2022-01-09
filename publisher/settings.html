@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publisher - Settings</title>
+</head>
+<body>
+    <!-- User actions -->
+    <header>
+        <a href="settings.html">Settings</a>
+        <a href="login.html">Logout</a>
+        <input type="search" name="search" id="search" placeholder="Search posts">
+    </header>
+    <hr>
+    <!-- Navigation bar -->
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="my-posts.html">My Posts</a>
+        <a href="notifications.html">Notifications</a>
+        <a href="feed.html">Public Feed</a>
+    </nav>
+    <!-- Main section -->
+    <h1 id="pagetop">Settings</h1>
+    <section>
+        <fieldset>
+            <legend>User Settings</legend>
+            <form action="#">
+                <div>
+                    <input type="email" placeholder="myemail@test.com" disabled>
+                </div>
+                <div>
+                    <input type="password" name="oldpass" id="oldpass" minlength="10" maxlength="256" placeholder="Current password">
+                </div>
+                <div>
+                    <input type="password" name="newpass" id="newpass" minlength="10" maxlength="256" placeholder="New password">
+                </div>
+                <div>
+                    <input type="password" name="newpassconf" id="newpassconf" minlength="10" maxlength="256" placeholder="Confirm password">
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </fieldset>
+    </section>
+    <a href="#pagetop">Back to top</a>
+    <hr>
+    <!-- Coryright information -->
+    <footer>
+        Copyright © 2022 Lemonpill
+    </footer>
+</body>
+</html>
