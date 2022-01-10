@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social - Sign-up</title>
+</head>
+<body>
+    <header>
+        <span>Not logged in</span>
+        <a href="sign-up.html">Sign up</a>
+        <a href="login.html">Login</a>
+    </header>
+    <section>
+        <h1>Sign up</h1>
+        <fieldset>
+            <legend>Create a new user</legend>
+            <form action="feed.html">
+                <div>
+                    <input type="email" name="email" id="email" maxlength="100" placeholder="Your email" required>
+                </div>
+                <div>
+                    <input type="password" name="pass1" id="pass1" minlength="10" maxlength="1000" placeholder="New password" required>
+                </div>
+                <div>
+                    <input type="password" name="pass2" id="pass2" minlength="10" maxlength="1000" placeholder="Confirm password" required>
+                </div>
+                <div>
+                    <input type="checkbox" name="agree" id="agree" required>
+                    <label for="agree">I agree to <a href="#">terms of use</a>.</label>
+                </div>
+                <div>
+                    <button type="submit">Sign up</button>
+                </div>
+            </form>
+        </fieldset>
+    </section>
+</body>
+</html>

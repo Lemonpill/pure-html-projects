@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social - Sign-up</title>
+</head>
+<body>
+    <header>
+        <span>Logged in as Example User</span>
+        <a href="settings.html">Settings</a>
+        <a href="login.html">Logout</a>
+    </header>
+    <hr>
+    <nav>
+        <a href="feed.html">Feed</a>
+        <a href="notifications.html">Notifications</a>
+        <a href="profile.html">My profile</a>
+    </nav>
+    <section>
+        <h1>Settings</h1>
+        <fieldset>
+            <legend>User settings</legend>
+            <form action="feed.html">
+                <div>
+                    <input type="email" placeholder="testmail@test.com" disabled>
+                </div>
+                <div>
+                    <input type="password" name="pass1" id="pass1" minlength="10" maxlength="1000" placeholder="New password" required>
+                </div>
+                <div>
+                    <input type="password" name="pass2" id="pass2" minlength="10" maxlength="1000" placeholder="Confirm password" required>
+                </div>
+                <div>
+                    <button type="submit">Save</button>
+                </div>
+            </form>
+        </fieldset>
+    </section>
+</body>
+</html>
